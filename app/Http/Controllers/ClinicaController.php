@@ -46,7 +46,7 @@ class ClinicaController extends Controller
      */
     public function show($id)
     {
-        Clinica::find($id);
+        return Clinica::find($id);
     }
 
     /**
@@ -83,5 +83,10 @@ class ClinicaController extends Controller
     public function destroy($id)
     {
         Clinica::destroy($id);
+    }
+
+    public function all()
+    {
+        return Clinica::all();
     }
 }

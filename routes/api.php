@@ -12,6 +12,6 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::get('clinica/all', 'ClinicaController@all');
 
 Route::resource('clinica', 'ClinicaController');
