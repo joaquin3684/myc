@@ -87,6 +87,6 @@ class ClinicaController extends Controller
 
     public function all()
     {
-        return Clinica::all();
+        return Clinica::orderBy('nombre')->get();
     }
 }
